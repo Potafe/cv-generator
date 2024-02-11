@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from '../styles/style.module.css';
 
 function EducationalInfoField({ handleFormSubmit, educationData, setFormData }) {
     
@@ -48,7 +49,7 @@ function EducationalInfoField({ handleFormSubmit, educationData, setFormData }) 
     const showNotOnGoing = (
         <div>
             <span>Graduated: </span>
-            <input value = {endDateVal} type = "month" name = "endDate" className="F" onChange={handleEndDateVal} required  />
+            <input value = {endDateVal} className = {styles.inputField} type = "month" name = "endDate" onChange={handleEndDateVal} required  />
         </div>
     );
 
@@ -87,8 +88,8 @@ function EducationalInfoField({ handleFormSubmit, educationData, setFormData }) 
             {educationData ? educationData.map((element, index) => (
                 <div>
                     <span>{element.school}</span>
-                    <i data-index-value = {index} data-form-type = "education" onClick = {handleEditForm}></i>/
-                    <i data-index-value = {index} data-form-type = "education" onClick = {handleDeleteForm}></i>
+                    <i className="bi bi-pencil" data-index-value = {index} data-form-type = "education" onClick = {handleEditForm}></i>/
+                    <i className="bi bi-trash" data-index-value = {index} data-form-type = "education" onClick = {handleDeleteForm}></i>
                 </div>
             )) 
             : ""}
@@ -96,19 +97,19 @@ function EducationalInfoField({ handleFormSubmit, educationData, setFormData }) 
             <fieldset>
                 <div>
                     <span>School: </span>
-                    <input value = {schoolVal} type = "text" placeholder="School" onChange = {handleSchooVal} required/>
+                    <input value = {schoolVal} className = {styles.inputField} type = "text" placeholder="School" name = "school" onChange = {handleSchooVal}  required/>
                 </div>
                 <div>
                     <span>Degree: </span>
-                    <input value = {degreeVal} type = "text" placeholder="Degree" onChange = {handleDegreeVal} required/>
+                    <input value = {degreeVal} className = {styles.inputField} type = "text" placeholder="Degree" name = "degree" onChange = {handleDegreeVal}  required/>
                 </div>
                 <div>
                     <span>Starting Year: </span>
-                    <input value = {startDateVal} type = "month" onChange = {handleStartDateVal} name = "startDate" required/>
+                    <input value = {startDateVal} className = {styles.inputField} type = "month" onChange = {handleStartDateVal} name = "startDate"  required/>
                 </div>
                 <div>
                     <span>OnGoing </span>
-                    <input type = "checkbox" name = "onGoing" className="" onChange={handleOnGoing} checked = {OnGoing}/>
+                    <input type = "checkbox" name = "onGoing"  onChange={handleOnGoing} checked = {OnGoing} />
                 </div>
                 {OnGoing ? showOnGoing : showNotOnGoing}
                 <input value = {addInfo} name = "addInfo" hidden />
@@ -118,15 +119,15 @@ function EducationalInfoField({ handleFormSubmit, educationData, setFormData }) 
                         </span>
                         <div>
                             {addInfo.map((item, index) => (
-                                <span key = {index}>
+                                <span key = {index} className={styles.edItem}>
                                     {item}{" "}
-                                    <i data-index-value = {index} onClick = {handleRemoveInfo}></i>
+                                    <i className="bi bi-trash" data-index-value = {index} onClick = {handleRemoveInfo}></i>
                                 </span>
                             ))}
                         </div>
                         <div>
-                            <input type = "text" value = {addInfoVal} onChange = {handleAddInfo}/>
-                            <i onClick = {handleAddInfo}></i>
+                            <input type = "text" className = {styles.inputField} value = {addInfoVal} onChange = {handleAddInfoVal} />
+                            <i className="bi bi-plus-circle-fill" onClick = {handleAddInfo}></i>
                         </div>
                     </div>
                     <button type = "submitt">Submit</button>

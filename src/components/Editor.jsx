@@ -14,7 +14,6 @@ function Editor({ formData, handleChange, handleFormSubmit, handleDeleteForm, se
             <hr />
             <h3>Work Experience</h3>
             <hr />
-            <h3>Achievements</h3>
         </>
     );
 }
