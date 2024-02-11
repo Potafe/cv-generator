@@ -19,7 +19,8 @@ function App() {
       linkedin: "Linkedin ID",
       website: "Personal Portfolio",
       github: "Github User ID"
-    }
+    },
+    education: [],
   });
 
   const handleSetupInfo = (e) => {
@@ -46,6 +47,7 @@ function App() {
 
     formData.forEach((value, key) => {
       receivedData[key] = value;
+      e.target[key].value = "";
     })
 
     console.log(receivedData);
@@ -56,10 +58,20 @@ function App() {
     console.log(formData);
   };
 
+  const handleDeleteForm = (e) => {
+    const formType = e.target.dataset.customValue;
+    const indexValue = e.target.dataset.indexValue;
+
+    setFormData((f) => ({
+      ...f, 
+      [formType]: [...f[formType].splice(indexValue, 1)],
+    }))
+  }
+
   return (
     <>
     <div className = 'editor-container'>
-      <Editor formData = {formData} handleChange = {handleSetupInfo} handleFormSubmit = {handleFormSubmit}></Editor>
+      <Editor formData = {formData} handleChange = {handleSetupInfo} handleFormSubmit = {handleFormSubmit} handleDeleteForm={handleDeleteForm} setFormData={setFormData}></Editor>
     </div>
     <hr />
     <hr />

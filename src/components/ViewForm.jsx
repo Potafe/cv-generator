@@ -19,6 +19,23 @@ function ViewForm({ formData }) {
                     </li>
                 ))}
             </ul>
+            <h3>Education</h3>
+            <ul>
+                {formData.education.map((ed) => {
+                    const infoList = ed.addInfo.split(",");
+                    return (
+                        <li key = {ed.school}>
+                            School: {ed.school} Degree: {ed.degree} Start Date: {ed.startDate}{" "}
+                            End Date: {ed.endDate} Additional Info: {" "}
+                            {infoList.map((infoItem, index) => (
+                                <span key = {index}>
+                                    {infoItem}
+                                </span>
+                            ))}
+                        </li>
+                    )
+                })}
+            </ul>
         </div>
     );
 }
