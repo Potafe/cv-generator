@@ -130,7 +130,7 @@ function EducationalInfoField({ handleFormSubmit, educationData, setFormData }) 
                             <i className="bi bi-plus-circle-fill" onClick = {handleAddInfo}></i>
                         </div>
                     </div>
-                    <button type = "submitt">Submit</button>
+                    <button type = "submit">Submit</button>
             </fieldset>
         </form>
     )

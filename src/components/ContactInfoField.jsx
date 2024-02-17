@@ -1,7 +1,7 @@
 function ContactInfoField({ contactinfo, handleChange }) {
     return (
         <form>
-            <h1>Contact Information</h1>
+            <h3>Contact Information</h3>
             <fieldset>
                 <div>
                     <span>
