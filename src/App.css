@@ -4,3 +4,36 @@
   padding: 2rem;
   text-align: center;
 }
+
+.editor-container {
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: rgb(255, 255, 255);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.editor-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.editor-container::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 100vw;
+}
+
+.editor-container::-webkit-scrollbar-track {
+  border-radius: 100vw;
+}
+
+.cv-container {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  width: 750px;
+  height: 1122.52px;
+  margin: 10px;
+}

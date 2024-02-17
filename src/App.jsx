@@ -21,6 +21,8 @@ function App() {
       github: "Github User ID"
     },
     education: [],
+    work: [],
+    skills: []
   });
 
   const handleSetupInfo = (e) => {
