@@ -42,7 +42,7 @@
 }
   
 .button:hover {
-    background-color: hsla(0, 100%, 51%, 0.922);
+    background-color: hsl(257, 94%, 18%);
     color: antiquewhite;
     border: none;
     cursor: pointer;
