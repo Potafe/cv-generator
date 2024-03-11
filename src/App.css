@@ -27,9 +27,12 @@
 
 .cv-container {
   background-color: rgb(255, 255, 255);
-  padding: 30px;
   box-shadow: 5px 5px 10px hsl(0, 0%, 39%);
   width: 750px;
   height: 1122.52px;
   margin: 10px;
+}
+
+.print-container {
+  padding: 30px;
 }
