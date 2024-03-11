@@ -109,7 +109,7 @@ function EducationalInfoField({ handleFormSubmit, educationData, setFormData }) 
                 </div>
                 <div>
                     <span>OnGoing </span>
-                    <input type = "checkbox" name = "onGoing"  onChange={handleOnGoing} checked = {OnGoing} />
+                    <input type = "checkbox" name = "onGoing"  onChange={handleOnGoing} checked = {OnGoing} value={OnGoing} />
                 </div>
                 {OnGoing ? showOnGoing : showNotOnGoing}
                 <input value = {addInfo} name = "addInfo" hidden />
@@ -130,7 +130,7 @@ function EducationalInfoField({ handleFormSubmit, educationData, setFormData }) 
                             <i className="bi bi-plus-circle-fill" onClick = {handleAddInfo}></i>
                         </div>
                     </div>
-                    <button type = "submit">Submit</button>
+                    <button type = "submit" className={styles.button}>Submit</button>
             </fieldset>
         </form>
     )
