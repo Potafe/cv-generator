@@ -1,20 +1,56 @@
 .inputField {
     border-radius: 10px;
-    width: 500px;
-    height: 80px;
+    width: 450px;
+    height: 60px;
     padding-inline: 50px;
     display: block;
     font-size: 20px;
 }
   
-.edItem {
-    padding: 3px;
+.inputFieldTextArea {
+    border-radius: 10px;
+    width: 500px;
+    height: 80px;
+    padding: 25px;
+    display: block;
+    font-size: 20px;
+}
+  
+.inputLabel {
+    color: hsla(0, 0%, 15%, 0.842);
+    background-color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+    top: 13px;
+    left: 8px;
+    z-index: 5;
+}
+  
+.inputFieldContainer {
+    margin: 10px 0px;
+}
+  
+.button {
+    background-color: black;
+    color: antiquewhite;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 120px;
     border-radius: 5px;
-    max-width: 5px;
-    height: 50px;
-    border: 1px solid black;
-    margin-right: 5px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    font-size: medium;
+}
+  
+.button:hover {
+    background-color: hsla(0, 100%, 51%, 0.922);
+    color: antiquewhite;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+}
+  
+.fieldSet {
+    border: none;
 }
