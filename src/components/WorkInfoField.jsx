@@ -1,5 +1,6 @@
 import { useState } from "react"
 import style from '../styles/style.module.css'
+import '../styles/WorkInfo.css'
 
 function WorkInfoField({ handleFormSubmit, workData, setFormData }) {
 
