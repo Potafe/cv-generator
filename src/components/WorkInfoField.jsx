@@ -126,7 +126,7 @@ function WorkInfoField({ handleFormSubmit, workData, setFormData }) {
                         </div>
                         <div className={style.inputFieldContainer}>
                             <span>On Going: </span>
-                            <input type = "checkbox" name = "Ongoing" className="" checked = {OnGoing} onChange={handleOnGoing}/>
+                            <input type = "checkbox" name = "Ongoing" className="" checked = {OnGoing} onChange={handleOnGoing} value={OnGoing}/>
                         </div>
 
                         {!OnGoing && showNotOnGoing}
