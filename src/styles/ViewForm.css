@@ -1,0 +1,87 @@
+.info-container {
+    display: flex;
+}
+
+.basicInfo-container {
+    width: 75%;
+}
+
+.basicInfo-fullname {
+    font-size: 40px;
+    color: hsl(257, 94%, 18%); 
+}
+
+.basicInfo-profTitle {
+    font-size: 20px;
+    color:  hsl(257, 94%, 18%);
+}
+
+.basicInfo-about {
+    font-size: 15px;
+}
+
+
+.contactinfo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contactinfo-item {
+    font-size: small;
+}
+
+.educationalInfo-container h3 {
+    color: hsl(257, 94%, 18%)
+}
+  
+.workInfo-container h3 {
+    color: hsl(257, 94%, 18%)
+}
+
+.education-heading {
+    display: flex;
+    margin-top: 10px;
+}
+
+.education-school {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+.education-date {
+    align-self: center;
+    font-size: smaller;
+    color: rgb(133, 133, 133);
+}
+  
+.lower-bottom {
+    display: flex;
+}
+  
+.left-side {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.bi.bi-envelope-fill {
+    color: hsl(257, 94%, 18%)
+}
+
+.bi.bi-telephone-fill {
+    color: hsl(257, 94%, 18%)
+}
+  
+.bi.bi-browser-chrome {
+    color: hsl(257, 94%, 18%)
+}
+
+.bi.bi-linkedin {
+    color: hsl(257, 94%, 18%)
+}
+
+.bi.bi-github {
+    color: hsl(257, 94%, 18%)
+}
