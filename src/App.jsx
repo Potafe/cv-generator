@@ -7,18 +7,18 @@ function App() {
   const [formData, setFormData] = useState({
     setupinfo: 
     {
-      firstName: 'John',
-      lastName: 'Doe',
-      profTitle: 'Classical Singer',
-      aboutYou: 'Hello, I am a student of Mozart'
+      firstName: '',
+      lastName: '',
+      profTitle: '',
+      aboutYou: ''
     },
     contactinfo : 
     {
-      phone: "XXX XXX XXX",
-      email:  "xyz@email.com",
-      linkedin: "Linkedin ID",
-      website: "Personal Portfolio",
-      github: "Github User ID"
+      phone: "",
+      email:  "",
+      linkedin: "",
+      website: "",
+      github: ""
     },
     education: [],
     work: [],
